@@ -1,0 +1,12 @@
+
+public class Venda {
+	
+	private Long id;
+	
+	private String descricaoVenda;
+	
+	private String nomeCliente;
+	
+	private String enderecoEntrega;
+
+}
