@@ -8,5 +8,7 @@ public class Venda {
 	private String nomeCliente;
 	
 	private String enderecoEntrega;
+	
+	
 
 }
