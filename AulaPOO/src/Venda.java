@@ -20,6 +20,20 @@ public class Venda {
 		return listaProdutos;
 	}
 	
+	public void addProduto(Produto produto) {
+		/*poderia fazer várias validações*/
+		this.listaProdutos.add(produto);
+	}
+	
+	private double totalVenda() {
+		double total = 0.0;
+		
+		for (Produto produto : listaProdutos) {
+			total += produto.getValor().doubleValue();
+		}
+		
+		return total;
+	}
 
 	public Long getId() {
 		return id;
@@ -54,6 +68,7 @@ public class Venda {
 	}
 
 	public BigDecimal getValorTotal() {
+		this.valorTotal = BigDecimal.valueOf(totalVenda());
 		return valorTotal;
 	}
 
